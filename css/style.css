@@ -82,9 +82,6 @@ body {
 /* --------------------------- header section end --------------------------- */
 /* --------------------------- main section start --------------------------- */
 /* categories start */
-.categories {
-    
-}
 .main_section_title {
     font-size: 36px;
     font-weight: 600;
@@ -105,6 +102,11 @@ body {
     font-size: 36px;
     font-weight: 500;
     color: whitesmoke;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom .7s ease;
+}
+.watch:hover h2, .bag:hover h2, .shoe:hover h2 {
+    border-bottom: 3px solid #ffffff;
 }
 .watch img, .bag img, .shoe img {
     width: 94px;
@@ -115,6 +117,44 @@ body {
     transform: scale(1.5) rotate(360deg);
 }
 /* categories end */
+/* shoes start  */
+.shoes_section {
+    background-color: #F4F4F4;
+    overflow: hidden;
+}
+.shoe_info {
+    transition: transform .7s ease;
+    border-radius: 10px !important;
+}
+.shoe_info:hover {
+    transform: scale(.95);
+}
+.shoe_info img {
+    overflow: hidden;
+    transition: transform .7s ease-in-out;
+}
+.shoe_info:hover img {
+    transform: scale(1.1) rotate(7deg);
+}
+.shoe_title h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.shoe_price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF136F;
+}
+.custom_button {
+    background-color: #FF136F;
+    cursor: pointer;
+}
+.custom_button button {
+    outline: none;
+    background-color: #FF136F;
+}
+/* shoes end  */
 /* --------------------------- main section end --------------------------- */
 
 

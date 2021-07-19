@@ -171,6 +171,7 @@ body {
     background: #fff;
     border: none;
     outline: none;
+    width: 683px;
 }
 .contact_email button {
     padding: 15px 40px;
@@ -215,7 +216,15 @@ body {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-  }
+@media only screen and (max-width: 991px) {
+    .contact_email input {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 374px) {
+    .contact_email input {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
   /* ----------------------------- responsive end ----------------------------- */

@@ -8,6 +8,9 @@ body {
 /* --------------------------- common styles end -------------------------- */
 /* ------------------------------ header section start ------------------------------ */
 /* nav start */
+.custom_navbar_toggler_button:focus {
+    box-shadow: none;
+}
 .search_box {
     width: 50%;
     background: #F1F1F1;
@@ -71,6 +74,9 @@ body {
     color: #fff;
     font-weight: 500;
     font-style: 16px;
+}
+.banner_text button:hover {
+    color: #fff;
 }
 .banner_img img {
     width: 402px;
@@ -147,12 +153,12 @@ body {
     color: #FF136F;
 }
 .custom_button {
-    background-color: #FF136F;
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
     cursor: pointer;
 }
 .custom_button button {
     outline: none;
-    background-color: #FF136F;
+    background: transparent;
 }
 /* shoes end  */
 /* contact section start */
@@ -180,6 +186,9 @@ body {
     margin-left: -4px;
     color: whitesmoke;
     font-weight: 600;
+}
+.contact_email button:hover {
+    color: whitesmoke;
 }
 /* contact section end */
 /* --------------------------- main section end --------------------------- */
@@ -217,6 +226,13 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+    .search_box {
+        width: 100%;
+        margin: 20px 0 15px;
+    }
+    .custom_navbar {
+        text-align: center;
+    }
     .contact_email input {
         width: 60%;
     }
